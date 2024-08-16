@@ -1,0 +1,75 @@
+{
+    "explorer.sortOrder": "type",
+    "editor.tabSize": 2,
+
+    // Directories to exclude from search results.
+    "search.exclude": {
+        ".git": true,
+        "**/node_modules": true,
+    },
+
+    // Hidden to avoid visual clutter. Flip to true to see them.
+    "files.exclude": {
+        "**/static": true,
+        "**/node_modules": true,
+        "**/coverage": true,
+        "**/.editorconfig": true,
+        "**/.yarn": true,
+        "**/.yarnrc.yml": true,
+        "**/fortawesome-pro-regular-svg-icons-v6.4.2.tgz": true,
+        "**/junit.xml": true,
+        "**/svgo.config.js": true,
+        "**/tsconfig.json": true,
+        "**/vetur.config.js": true,
+        "**/yarn.lock": true,
+        "**/.eslintignore": true,
+        "**/.eslintrc.cjs": true,
+        "**/.nvmrc": true,
+        "**/.env": true,
+        "**/build": true,
+        "**/additional_jest_setup.js": true,
+    },
+    
+    // Enable the ESlint flat config support
+    "eslint.experimental.useFlatConfig": true,
+  
+    // Disable the default formatter, use eslint instead
+    "prettier.enable": false,
+    "editor.formatOnSave": false,
+  
+    // Auto fix
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "never"
+    },
+  
+    // Silent the stylistic rules in you IDE, but still auto fix them
+    "eslint.rules.customizations": [
+      { "rule": "style/*", "severity": "off" },
+      { "rule": "format/*", "severity": "off" },
+      { "rule": "*-indent", "severity": "off" },
+      { "rule": "*-spacing", "severity": "off" },
+      { "rule": "*-spaces", "severity": "off" },
+      { "rule": "*-order", "severity": "off" },
+      { "rule": "*-dangle", "severity": "off" },
+      { "rule": "*-newline", "severity": "off" },
+      { "rule": "*quotes", "severity": "off" },
+      { "rule": "*semi", "severity": "off" }
+    ],
+  
+    // Enable eslint for all supported languages
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+      "vue",
+      "html",
+      "markdown",
+      "json",
+      "jsonc",
+      "yaml",
+      "toml"
+    ]
+  }
+  
