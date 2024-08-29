@@ -1,6 +1,11 @@
 {
-    "explorer.sortOrder": "type",
     "editor.tabSize": 2,
+    
+    // Hides the git graph in the source control tab.
+    "scm.showHistoryGraph": false,
+
+    // Sorts files in the explorer by type.
+    "explorer.sortOrder": "type",
 
     // Directories to exclude from search results.
     "search.exclude": {
