@@ -13,7 +13,7 @@
         "**/node_modules": true,
     },
 
-    // Hidden to avoid visual clutter. Flip to true to see them.
+    // Hidden to avoid visual clutter. Flip to false to see them.
     "files.exclude": {
         "**/static": true,
         "**/node_modules": true,
