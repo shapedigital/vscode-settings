@@ -1,4 +1,13 @@
 {
+    // Used to group (nest) some related files together
+    "explorer.fileNesting.enabled": true,
+    
+    "explorer.fileNesting.patterns": {
+        "tsconfig.json": "tsconfig.*.json, env.d.ts",
+        "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
+        "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .prettier*, prettier*, .editorconfig"
+    },
+    
     "editor.tabSize": 2,
     
     // Hides the git graph in the source control tab.
